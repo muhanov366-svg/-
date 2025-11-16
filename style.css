@@ -1,0 +1,57 @@
+/* Стилизация тела страницы */
+body {
+    margin: 0; /* Устраняем отступы вокруг body */
+    background-image: url('класс.jpg'); /* Назначаем фоновое изображение телу */
+    background-size: cover; /* Масштабируем изображение с сохранением пропорций */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    font-family: Arial, sans-serif; /* Шрифты */
+}
+
+/* Общий контейнер, задаём флексбокс для размещения main и aside рядом */
+.container {
+    display: flex;
+    min-height: calc(100vh - 100px); /* Высота страницы минус высота хедера */
+}
+
+/* Основная область контента */
+main {
+    flex-grow: 1; /* Занимаем оставшуюся ширину окна браузера */
+}
+
+/* Правая боковая панель */
+.sidebar {
+    width: 25%; /* Ширина 25% */
+    margin-left: auto; /* Выравниваем вправо */
+    padding: 10px;
+}
+
+/* Остальные стили остаются прежними */
+.logo img {
+    width: 40px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.menu-block {
+    display: flex;
+    align-items: center; /* Центрируем вертикальное положение */
+    justify-content: space-between; /* Логотип слева, меню справа */
+    background-color: #ff00cc;
+    padding: 10px 3px;
+    height: 10px;
+}
+
+/* Класс .fonklassa больше не нужен */
+.fonklassa {
+    display: none; /* Скрываем этот класс, так как он больше не используется */
+}
