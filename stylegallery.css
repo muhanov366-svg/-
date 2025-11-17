@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0; /* Устраняем отступы вокруг body */
+    background-image: url('класс.jpg'); /* Назначаем фоновое изображение телу */
+    background-size: cover; /* Масштабируем изображение с сохранением пропорций */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    font-family: Arial, sans-serif; /* Шрифты */
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.row:nth-child(1) {
+    justify-content: flex-start; /* Ряд 1: по левому краю */
+}
+.row:nth-child(2) {
+    justify-content: flex-end; /* Ряд 2: по правому краю */
+}
+.row:nth-child(3) {
+    justify-content: flex-start; /* Ряд 3: по левому краю */
+}
+
+.preview {
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.folder-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder-link:hover {
+    color: #0056b3;
+}
+.logo img {
+    width: 40px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.menu-block {
+    display: flex;
+    align-items: center; /* Центрируем вертикальное положение */
+    justify-content: space-between; /* Логотип слева, меню справа */
+    background-color: #ff00cc;
+    padding: 10px 3px;
+    height: 10px;
+}
+h2 {
+    color: #00ff22;
+}
